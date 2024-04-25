@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545075956983652740}
   - component: {fileID: 5697238736700596648}
+  - component: {fileID: 4285341702876964439}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: SpawnPoint
@@ -78,3 +79,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4285341702876964439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226705064244863000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc1db211f7546e290f063742b2d88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astroidPrefab: {fileID: 0}
+  shootingDirection: 0

@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 155469433}
   - component: {fileID: 155469432}
+  - component: {fileID: 155469434}
   m_Layer: 0
   m_Name: SpawnPoint2 (1)
   m_TagString: SpawnPoint
@@ -197,6 +198,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &155469434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155469431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc1db211f7546e290f063742b2d88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astroidPrefab: {fileID: 9163479853253015627, guid: 22d432477e79f42c0b9995df7b4632b0, type: 3}
+  spawnnerSide: 0
 --- !u!1 &303624493
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683797469}
   - component: {fileID: 683797468}
+  - component: {fileID: 683797470}
   m_Layer: 0
   m_Name: SpawnPoint2
   m_TagString: SpawnPoint
@@ -474,6 +490,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &683797470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683797467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc1db211f7546e290f063742b2d88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astroidPrefab: {fileID: 9163479853253015627, guid: 22d432477e79f42c0b9995df7b4632b0, type: 3}
+  spawnnerSide: 0
 --- !u!1 &719879549
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669936676}
   - component: {fileID: 1669936675}
+  - component: {fileID: 1669936677}
   m_Layer: 0
   m_Name: SpawnPoint2 (2)
   m_TagString: SpawnPoint
@@ -644,6 +675,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1669936677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669936674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dc1db211f7546e290f063742b2d88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  astroidPrefab: {fileID: 9163479853253015627, guid: 22d432477e79f42c0b9995df7b4632b0, type: 3}
+  spawnnerSide: 0
 --- !u!1001 &836305186119271204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -696,6 +741,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 4042448349533756512, guid: 4bf5041ed1bdd47bd9fefac9248b828a, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285341702876964439, guid: 4bf5041ed1bdd47bd9fefac9248b828a, type: 3}
+      propertyPath: spawnnerSide
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285341702876964439, guid: 4bf5041ed1bdd47bd9fefac9248b828a, type: 3}
+      propertyPath: astroidPrefab
+      value: 
+      objectReference: {fileID: 9163479853253015627, guid: 22d432477e79f42c0b9995df7b4632b0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
