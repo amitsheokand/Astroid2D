@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    public GameObject bullet;
+    
     private Vector2 velocity;
     private Rigidbody2D rigidbody2D;
+    
+    [SerializeField]
+    private Transform nozzle;
     
     
     // TODO
@@ -26,6 +32,20 @@ public class PlayerController : MonoBehaviour
     }
     
     // Reminder : Update for normal updates
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Shoot
+            GameObject spawnedBullet = Instantiate(bullet, nozzle.position, Quaternion.identity);
+            
+            spawnedBullet.GetComponent<Rigidbody2D>().AddForce(transform.up * 10, ForceMode2D.Impulse);
+            
+        }
+    }
+
+
     // FixedUpdate for physics calulations 
     
     void FixedUpdate()

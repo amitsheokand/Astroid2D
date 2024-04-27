@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 
@@ -10,10 +9,13 @@ public class Player : MonoBehaviour
 
     private Camera viewCamera;
     private PlayerController _playerController;
+
+    private AstroidGameManager _gameManager;
     
     void Start()
     {
         _playerController = GetComponent<PlayerController>();
+        _gameManager = FindFirstObjectByType<AstroidGameManager>();
         viewCamera = Camera.main;
     }
 
@@ -35,7 +37,14 @@ public class Player : MonoBehaviour
 
             _playerController.LookAt(point);
         }
-
-
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Meteor"))
+        {
+            _gameManager.OnPlayerDeath(transform.position);
+            Destroy(gameObject);
+        }
     }
 }
